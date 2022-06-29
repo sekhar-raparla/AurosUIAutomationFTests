@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests" thread-count="3">
+
+<listeners>
+		<listener class-name="com.auros.utils.ListenerManager" />
+	</listeners>
+	
+  <test name="Verify the Logged In User">
+    <classes>
+      <class name="com.auros.basic.VerifyLoggedInUserInHomePageTest"/>  
+    </classes>
+  </test> <!-- Test -->
+  
+  <test name="Verify K-PAC through Search by K-PAC ID">
+    <classes>
+      <class name="com.auros.basic.VerifySearchByKPACIDTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test name="Verify AC through Search By AC ID ">
+    <classes>
+           <class name="com.auros.basic.VerifySearchByACIDTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test name="Verify CoP in Home Page">
+    <classes>
+        <class name="com.auros.basic.VerifyCoPInHomePageTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test name="Verify Issue through Search By Issue ID">
+    <classes>
+       <class name="com.auros.basic.VerifySearchByIssueIDTest"/>
+    </classes>
+  </test> <!-- Test -->
+      
+</suite> <!-- Suite -->
